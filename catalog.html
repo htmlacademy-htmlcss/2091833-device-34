@@ -8,7 +8,12 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="logo-link"
-        ><img class="logo" alt="Логотип интернет-магазина Девайс" src=""
+        ><img
+          class="logo"
+          alt="Логотип интернет-магазина Девайс"
+          src="images\logo.svg"
+          width="145"
+          height="36"
       /></a>
       <form class="search-elements" action="https://echo.htmlacademy.ru">
         <input
@@ -21,24 +26,54 @@
       </form>
       <ul class="menu-list">
         <li class="menu-item">
-          <a class="menu-link login-complete" href="#">Коля Петухов</a>
+          <a class="menu-link login-complete" href="#"
+            ><img
+              class="header-icon"
+              src="images\icons\login.svg"
+              alt=""
+              width="13"
+              height="12"
+            />Коля Петухов</a
+          >
         </li>
         <li class="menu-item">
           <a class="menu-link user-exit" href="#">Выйти</a>
         </li>
-        <li class="menu-item"><a class="menu-link" href="#">Сравнить</a></li>
         <li class="menu-item">
-          <button class="menu-link cart">Корзина</button>
+          <a href="#" class="menu-link"
+            ><img
+              class="header-icon"
+              src="images\icons\compare.svg"
+              alt=""
+              width="10"
+              height="12"
+            />
+            Сравнить</a
+          >
         </li>
-        <!-- Только Корзина кнопка? По макету и стайлгайду непонятно -->
+        <li class="menu-item">
+          <a href="#" class="menu-link"
+            ><img
+              class="header-icon"
+              src="images\icons\card.svg"
+              alt=""
+              width="16"
+              height="14"
+            />Корзина</a
+          >
+        </li>
       </ul>
       <nav class="header-navigation">
         <button class="button button-catalog" type="button">
           Каталог товаров
         </button>
-        <img class="catalog-expand" src="" alt="Развернуть каталог товаров" />
-
-        <!--Нужно здесь делать картинку(иконку) отдельно, или в CSS пределать потом?-->
+        <img
+          class="catalog-expand"
+          src="images\icons\catalog-open.svg"
+          alt="Развернуть каталог товаров"
+          width="50"
+          height="50"
+        />
 
         <ul class="nav-list">
           <li class="nav-item">
@@ -134,43 +169,67 @@
           </option>
           <option class="catalog-category-item" value="cheap">Дешевые</option>
         </select>
-        <img
-          class="sort-smaller"
-          src="#"
-          alt="Сортировка от меньшего к большему"
-        />
-        <img
-          class="sort-biggest"
-          src="#"
-          alt="Сортировка от большего к меньшему"
-        />
+        <button type="button" class="btn-arrow-up">
+          <span class="visuality-hidden"
+            >Сортировка от меньшего к большему</span
+          >
+        </button>
+        <button type="button" class="btn-arrow-down">
+          <span class="visuality-hidden"
+            >Сортировка от большего к меньшему</span
+          >
+        </button>
       </section>
       <!--Верхние фильтры сортировки-->
       <ul class="product-list">
         <li class="product-card">
-          <a class="product-link" href="">
-            <img class="product-card-img" src="" alt="" />
+          <a class="product-link" href="#">
+            <img
+              class="product-card-img"
+              src="images\product\amateur-selfie-stick.jpg"
+              alt=""
+              width="360"
+              height="360"
+            />
             <b class="product-card-desc">Любительская селфи-палка</b>
             <span class="product-card-price">500 ₽</span>
           </a>
         </li>
         <li class="product-card">
-          <a class="product-link" href="">
-            <img class="product-card-img" src="" alt="" />
+          <a class="product-link" href="#">
+            <img
+              class="product-card-img"
+              src="images\product\professional-selfie-stick.jpg"
+              alt=""
+              width="360"
+              height="360"
+            />
             <b class="product-card-desc">Профессиональная селфи-палка </b>
             <span class="product-card-price">1500 ₽</span>
           </a>
         </li>
         <li class="product-card">
-          <a class="product-link" href="">
-            <img class="product-card-img" src="" alt="" />
+          <a class="product-link" href="#">
+            <img
+              class="product-card-img"
+              src="images\product\unsinkable-selfie-stick.jpg"
+              alt=""
+              width="360"
+              height="360"
+            />
             <b class="product-card-desc">Непотопляемая селфи-палка</b>
             <span class="product-card-price">2500 ₽</span>
           </a>
         </li>
         <li class="product-card">
-          <a class="product-link" href="">
-            <img class="product-card-img" src="" alt="" />
+          <a class="product-link" href="#">
+            <img
+              class="product-card-img"
+              src="images\product\follow-me-selfie-stick.jpg"
+              alt=""
+              width="360"
+              height="360"
+            />
             <b class="product-card-desc">Селфи-палка «Следуй за мной»</b>
             <span class="product-card-price">1500 ₽</span>
           </a>
@@ -209,8 +268,10 @@
     <footer class="page-footer">
       <img
         class="footer-logo_device"
-        src=""
+        src="images\footer-logo-device.svg"
         alt="Логотип интернет-магазина Девайс"
+        width="145"
+        height="36"
       />
       <address class="footer-address">
         Санкт-Петербург, набережная<br />
@@ -233,24 +294,45 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy"
-            ><img class="social-img" src="" alt="Телеграмм"
+            ><img
+              class="social-img"
+              src="images\icons\telegram.svg"
+              alt="Телеграмм"
+              width="13"
+              height="11"
           /></a>
         </li>
+        <!--У этих иконки значения ширина и высота указаны с десятыми, как их лучше записывать?-->
         <li class="social-item">
           <a
             class="social-link"
             href="https://www.youtube.com/user/htmlacademyru"
-            ><img class="social-img" src="" alt="Ютуб"
+            ><img
+              class="social-img"
+              src="images\icons\youtube.svg"
+              alt="Ютуб"
+              width="16"
+              height="10"
           /></a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://twitter.com/htmlacademy_ru"
-            ><img class="social-img" src="" alt="Твиттер"
+            ><img
+              class="social-img"
+              src="images\icons\twitter.svg"
+              alt="Твиттер"
+              width="15"
+              height="14"
           /></a>
         </li>
       </ul>
       <a class="footer-logo_link" href="https://htmlacademy.ru/"
-        ><img class="footer-logo_academy" src="" alt="Логотип htmlacademy"
+        ><img
+          class="footer-logo_academy"
+          src="images\footer-logo-academy.svg"
+          alt="Логотип htmlacademy"
+          width="115"
+          height="33"
       /></a>
     </footer>
   </body>
