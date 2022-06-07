@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
   <body>
@@ -258,47 +259,46 @@
       </section>
       <!-- Доставка -->
 
-      <section class="about_us">
-        <h2 class="about_us-title">О нас</h2>
-        <p class="about_us-decription">
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p class="about_us-decription">
-          Мы можем доставить ваш товар в самые отдалённые уголки России
-          транспортными компаниями:
-        </p>
-        <ul class="about_us-list">
-          <li class="about_us-item">Меловые линии</li>
-          <li class="about_us-item">СДИК</li>
-          <li class="about_us-item">ТоксБерри</li>
-        </ul>
-        <a href="#" class="button">Подробнее о нас</a>
-      </section>
-      <!-- О нас -->
+      <div class="about-contact">
+        <section class="about_us">
+          <h2 class="about_us-title">О нас</h2>
+          <p class="about_us-decription">
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+          </p>
+          <p class="about_us-decription">
+            Мы можем доставить ваш товар в самые отдалённые уголки России
+            транспортными компаниями:
+          </p>
+          <ul class="about_us-list">
+            <li class="about_us-item">Меловые линии</li>
+            <li class="about_us-item">СДИК</li>
+            <li class="about_us-item">ТоксБерри</li>
+          </ul>
+          <a href="#" class="button">Подробнее о нас</a>
+        </section>
+        <!-- О нас -->
 
-      <!-- Возможно стоит обернуть section: about_us и contact в div, чтобы потом можно было сделать их гридом или флексом? -->
-
-      <section class="contact">
-        <h2 class="contact-title">Контакты</h2>
-        <p class="contact-decription">
-          Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
-          проверить работоспособность покупки.
-        </p>
-        <h3 class="contact-name">Интернет-магазин «Девайс»</h3>
-        <address>
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </address>
-        <a class="contact-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <h3 class="contact-workhours-title">Время работы</h3>
-        <ul class="workhours-list">
-          <li class="workhours-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="workhours-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <a href="#" class="button">Напишите нам</a>
-      </section>
-      <!-- Контакты -->
-
+        <section class="contact">
+          <h2 class="contact-title">Контакты</h2>
+          <p class="contact-decription">
+            Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
+            проверить работоспособность покупки.
+          </p>
+          <h3 class="contact-name">Интернет-магазин «Девайс»</h3>
+          <address>
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </address>
+          <a class="contact-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <h3 class="contact-workhours-title">Время работы</h3>
+          <ul class="workhours-list">
+            <li class="workhours-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="workhours-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+          <a href="#" class="button">Напишите нам</a>
+        </section>
+        <!-- Контакты -->
+      </div>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
@@ -360,7 +360,6 @@
               height="11"
           /></a>
         </li>
-        <!--У этих иконки значения ширина и высота указаны с десятыми, как их лучше записывать?-->
         <li class="social-item">
           <a
             class="social-link"
