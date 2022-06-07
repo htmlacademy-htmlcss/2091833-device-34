@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс|Каталог</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
   <body>
+    <!-- Header -->
     <header class="page-header">
       <a href="index.html" class="logo-link"
         ><img
@@ -24,6 +26,8 @@
         />
         <button class="search-button">Найти</button>
       </form>
+
+      <!-- Меню -->
       <ul class="menu-list">
         <li class="menu-item">
           <a class="menu-link login-complete" href="#"
@@ -63,6 +67,9 @@
           >
         </li>
       </ul>
+      <!-- /Меню -->
+
+      <!-- Навигация -->
       <nav class="header-navigation">
         <button class="button button-catalog" type="button">
           Каталог товаров
@@ -87,7 +94,11 @@
           </li>
         </ul>
       </nav>
+      <!-- /Навигация -->
     </header>
+    <!-- /Header -->
+
+    <!-- MAIN -->
     <main class="catalog-page">
       <h1 class="catalog-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
@@ -101,12 +112,14 @@
           <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
+
+      <!-- Фильтры боковые -->
       <section class="catalog-filter">
         <h3 class="catalog-subtitle">фильтр:</h3>
         <fieldset class="catalog-filter-group">
           <label class="catalog-filter-title">Стоимость</label>
           <input type="range" min="0" max="8000" />
-          <span>от 0 до 8000</span>
+          <span class="price-range">от 0 до 8000</span>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
@@ -156,8 +169,9 @@
         </fieldset>
         <button type="button" class="button">показать</button>
       </section>
-      <!--Заканчивается фильтр-->
+      <!-- /Фильтры боковые -->
 
+      <!-- Верхние фильтры сортировки-->
       <section class="catalog-sort">
         <h3 class="catalog-subtitle">сортировка:</h3>
         <select class="catalog-sort-category" name="variants">
@@ -180,7 +194,9 @@
           >
         </button>
       </section>
-      <!--Верхние фильтры сортировки-->
+      <!--/Верхние фильтры сортировки-->
+
+      <!--Каталог товаров-->
       <ul class="product-list">
         <li class="product-card">
           <a class="product-link" href="#">
@@ -263,9 +279,10 @@
         </li>
       </ul>
     </main>
-    <!--Каталог товаров-->
+    <!--/Каталог товаров-->
 
-    <footer class="page-footer">
+    <!-- FOOTER -->
+    <footer class="main-footer">
       <img
         class="footer-logo_device"
         src="images\footer-logo-device.svg"
@@ -302,7 +319,6 @@
               height="11"
           /></a>
         </li>
-        <!--У этих иконки значения ширина и высота указаны с десятыми, как их лучше записывать?-->
         <li class="social-item">
           <a
             class="social-link"
