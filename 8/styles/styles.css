@@ -61,8 +61,14 @@ body {
   text-transform: uppercase;
   background-color: #ffe17f;
   letter-spacing: 0.2em;
+  border: none;
+  font-size: 18px;
+  padding: 0;
 }
 
+.button-catalog {
+  margin-right: 6px;
+}
 /* Header */
 .logo {
   margin-top: -20px;
@@ -233,7 +239,7 @@ body {
 
 /* Карточки с категориями товаров */
 .category {
-  margin-bottom: 70px;
+  margin-bottom: 144px;
 }
 
 .category-list {
@@ -246,6 +252,10 @@ body {
 .category-item {
   width: 160px;
   list-style-type: none;
+}
+
+.category-link {
+  text-decoration: none;
 }
 
 .category-descriprion {
@@ -279,7 +289,13 @@ body {
 /* Блок с услугами - Доставка */
 .service {
   margin-bottom: 70px;
-  background-color: #f0f0f0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 9%,
+    rgba(240, 240, 240, 1) 9%,
+    rgba(240, 240, 240, 1) 100%
+  );
 }
 
 .service-wrap {
@@ -338,7 +354,7 @@ body {
 }
 
 .service-description {
-  margin: 0 0 72px;
+  margin: 0 0 144px;
   padding: 0;
   text-align: left;
   color: #444444;
@@ -651,6 +667,9 @@ body {
 /* CATALOG */
 
 /* Header */
+.header-inner-navigation {
+  margin-bottom: 22px;
+}
 
 .user-exit {
   opacity: 0.3;
