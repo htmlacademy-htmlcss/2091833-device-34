@@ -79,18 +79,19 @@
           </li>
         </ul>
       </nav>
-      <div class="product-number-wrap">
+      <!-- <div class="product-number-wrap">
         <span class="product-number">01</span>
-      </div>
+      </div> -->
+      <span class="product-number">01</span>
     </header>
 
     <main class="main-page">
       <div class="main-wrap">
-        <!-- <h1 class="visuality-hidden">Интернет-магазин «Девайс»</h1> ВРЕМЕННО СКРЫЛ, ЧТОБЫ НЕ СБИВАЛОСЬ-->
+        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
         <div class="main-product-wrap">
           <section class="product-introduction">
             <button class="btn-control prev-img" type="button">
-              <span class="visuality-hidden">Предыдущий товар</span>
+              <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <a class="product-link" href="#">
               <img
@@ -102,7 +103,7 @@
               />
             </a>
             <button class="btn-control next-img" type="button">
-              <span class="visuality-hidden">Следующий товар</span>
+              <span class="visually-hidden">Следующий товар</span>
             </button>
           </section>
           <section class="product-description">
@@ -113,7 +114,14 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
               лазером, замаскированным под стандартную камеру.
             </p>
-            <a href="#" class="button">Подробнее</a>
+            <div class="product-swap">
+              <a href="#" class="button">Подробнее</a>
+              <div class="btn-product-wrap">
+                <button class="btn-product-swap">1</button>
+                <button class="btn-product-swap">2</button>
+                <button class="btn-product-swap">3</button>
+              </div>
+            </div>
             <table class="product-advantages">
               <tr>
                 <td class="product-distance">800 м</td>
@@ -131,82 +139,94 @@
 
       <!-- Категория товаров -->
       <section class="main-wrap category">
-        <!-- <h2 class="visuality-hidden">Категории товаров</h2> ВРЕМЕННО СКРЫЛ, ЧТОБЫ НЕ СБИВАЛОСЬ -->
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\vr.svg"
-                alt="Виртуальная реальность"
-                width="97"
-                height="55"
-              />
-            </div>
-            <h4 class="category-descriprion">Виртуальная реальность</h4>
+            <a href="#" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\vr.svg"
+                  alt="Виртуальная реальность"
+                  width="97"
+                  height="55"
+                />
+              </div>
+              <h4 class="category-descriprion">Виртуальная реальность</h4>
+            </a>
           </li>
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\monopod.svg"
-                alt="Моноподы для селфи"
-                width="85"
-                height="117"
-              />
-            </div>
-            <h4 class="category-descriprion">
-              Моноподы<br />
-              для селфи
-            </h4>
+            <a href="/catalog.html" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\monopod.svg"
+                  alt="Моноподы для селфи"
+                  width="85"
+                  height="117"
+                />
+              </div>
+              <h4 class="category-descriprion">
+                Моноподы<br />
+                для селфи
+              </h4>
+            </a>
           </li>
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\action-camera.svg"
-                alt="Экшн-камеры"
-                width="71"
-                height="87"
-              />
-            </div>
-            <h4 class="category-descriprion">Экшн-камеры</h4>
+            <a href="#" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\action-camera.svg"
+                  alt="Экшн-камеры"
+                  width="71"
+                  height="87"
+                />
+              </div>
+              <h4 class="category-descriprion">Экшн-камеры</h4>
+            </a>
           </li>
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\fitness-bracelets.svg"
-                alt="Фитнес-браслеты"
-                width="107"
-                height="64"
-              />
-            </div>
-            <h4 class="category-descriprion">Фитнес-браслеты</h4>
+            <a href="#" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\fitness-bracelets.svg"
+                  alt="Фитнес-браслеты"
+                  width="107"
+                  height="64"
+                />
+              </div>
+              <h4 class="category-descriprion">Фитнес-браслеты</h4>
+            </a>
           </li>
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\smart-watch.svg"
-                alt="Умные часы"
-                width="56"
-                height="98"
-              />
-            </div>
-            <h4 class="category-descriprion">Умные часы</h4>
+            <a href="#" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\smart-watch.svg"
+                  alt="Умные часы"
+                  width="56"
+                  height="98"
+                />
+              </div>
+              <h4 class="category-descriprion">Умные часы</h4>
+            </a>
           </li>
           <li class="category-item">
-            <div class="img-wrap">
-              <img
-                class="category-image"
-                src="images\category\drones.svg"
-                alt="Квадрокоптеры"
-                width="132"
-                height="69"
-              />
-            </div>
-            <h4 class="category-descriprion">Квадрокоптеры</h4>
+            <a href="#" class="category-link">
+              <div class="img-wrap">
+                <img
+                  class="category-image"
+                  src="images\category\drones.svg"
+                  alt="Квадрокоптеры"
+                  width="132"
+                  height="69"
+                />
+              </div>
+              <h4 class="category-descriprion">Квадрокоптеры</h4>
+            </a>
           </li>
         </ul>
       </section>
@@ -215,7 +235,7 @@
       <!-- Услуги -->
       <section class="service">
         <div class="main-wrap service-wrap">
-          <!-- <h2 class="visuality-hidden">Услуги</h2> ВРЕМЕННО СКРЫЛ, ЧТОБЫ НЕ СБИВАЛОСЬ-->
+          <h2 class="visually-hidden">Услуги</h2>
           <div class="list-wrap">
             <ul class="service-list">
               <li class="service-item">
@@ -279,11 +299,11 @@
         <div class="about_us-wrap">
           <section class="about_us">
             <h2 class="about_us-title">О нас</h2>
-            <p class="about_us-decription">
+            <p class="about_us-description">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть
               в каждом из нас.
             </p>
-            <p class="about_us-decription">
+            <p class="about_us-description">
               Мы можем доставить ваш товар в самые отдалённые уголки России
               транспортными компаниями:
             </p>
@@ -322,7 +342,7 @@
       <!-- Контакты -->
 
       <section class="subscribe">
-        <div class="main-wrap">
+        <div class="main-wrap subscribe-inner">
           <div class="subscribe-wrap">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">
@@ -386,38 +406,42 @@
             </li>
           </ul>
           <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy"
-                ><img
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <li class="social-item">
+                <img
                   class="social-img"
                   src="images\icons\telegram.svg"
                   alt="Телеграмм"
                   width="13"
                   height="11"
-              /></a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.youtube.com/user/htmlacademyru"
-                ><img
+                />
+              </li>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              <li class="social-item">
+                <img
                   class="social-img"
                   src="images\icons\youtube.svg"
                   alt="Ютуб"
                   width="16"
                   height="10"
-              /></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru"
-                ><img
+                />
+              </li>
+            </a>
+            <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+              <li class="social-item">
+                <img
                   class="social-img"
                   src="images\icons\twitter.svg"
                   alt="Твиттер"
                   width="15"
                   height="14"
-              /></a>
-            </li>
+                />
+              </li>
+            </a>
           </ul>
         </div>
         <div class="footer-phone-wrap">
