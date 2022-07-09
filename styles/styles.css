@@ -252,7 +252,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url(/images/icons/plus.svg);
+  background-image: url(images/icons/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000000;
@@ -269,7 +269,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url(/images/icons/plus.svg);
+  background-image: url(images/icons/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000000;
@@ -492,7 +492,7 @@ body {
 .btn-control {
   width: 20px;
   height: 60px;
-  background-image: url("/images/icons/arrow.svg");
+  background-image: url("images/icons/arrow.svg");
   background-repeat: no-repeat;
   background-size: 20px 60px;
   cursor: pointer;
@@ -752,7 +752,7 @@ body {
   background-color: #ffe17f;
   width: 125px;
   height: 100px;
-  background-image: url(/images/delivery-car.svg);
+  background-image: url(images/delivery-car.svg);
   background-size: 47px 31px;
   background-repeat: no-repeat;
   background-position: center;
