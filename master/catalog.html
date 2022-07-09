@@ -68,16 +68,7 @@
         </ul>
       </div>
       <nav class="header-inner-navigation nav-wrap">
-        <button class="button button-catalog" type="button">
-          Каталог товаров
-        </button>
-        <img
-          class="catalog-expand"
-          src="images\icons\catalog-open.svg"
-          alt="Развернуть каталог товаров"
-          width="50"
-          height="50"
-        />
+        <button class="button-catalog" type="button">Каталог товаров</button>
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="#">Доставка</a>
@@ -98,9 +89,33 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <svg
+              width="4"
+              height="7"
+              viewBox="0 0 4 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z"
+                fill="#000"
+              />
+            </svg>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+            <svg
+              width="4"
+              height="7"
+              viewBox="0 0 4 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z"
+                fill="#000"
+              />
+            </svg>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -183,12 +198,36 @@
                   </option>
                 </select>
                 <div class="catalog-button-wrap">
-                  <button type="button" class="btn-arrow-up">
+                  <button
+                    type="button"
+                    class="catalog-btn-arrow btn-arrow-down-up"
+                  >
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="m6 0 5.5 10H.5" fill="#000" />
+                    </svg>
                     <span class="visually-hidden"
                       >Сортировка от меньшего к большему</span
                     >
                   </button>
-                  <button type="button" class="btn-arrow-down">
+                  <button
+                    type="button"
+                    class="catalog-btn-arrow btn-arrow-down"
+                  >
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6 10 .5 0h11" fill="#000" />
+                    </svg>
                     <span class="visually-hidden"
                       >Сортировка от большего к меньшему</span
                     >
@@ -265,7 +304,11 @@
                   >
                   <ul class="paggination-page">
                     <li class="paggination-item">
-                      <a class="paggination-page-link" href="">1</a>
+                      <a
+                        class="paggination-page-link pagination-current"
+                        href=""
+                        >1</a
+                      >
                     </li>
                     <li class="paggination-item">
                       <a class="paggination-page-link" href="">2</a>
