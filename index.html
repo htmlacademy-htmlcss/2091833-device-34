@@ -127,21 +127,37 @@
         </ul>
       </div>
 
-      <nav class="nav-wrap header-navigation">
-        <button class="button-catalog" type="button">
-          <span class="button-catalog-title">Каталог товаров</span>
-        </button>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Доставка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Гарантия</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <nav class="header-navigation">
+        <div class="nav-wrap">
+          <button class="button-catalog" type="button">
+            <span class="button-catalog-title">Каталог товаров</span>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Гарантия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="subcatalog-wrap">
+          <ul class="subcatalog">
+            <li class="subcatalog-element">Виртуальная реальность</li>
+            <li class="subcatalog-element">Моноподы для cелфи</li>
+            <li class="subcatalog-element">Экшн-камеры</li>
+          </ul>
+          <ul class="subcatalog">
+            <li class="subcatalog-element">Фитнес-браслеты</li>
+            <li class="subcatalog-element">Умные часы</li>
+          </ul>
+          <ul class="subcatalog">
+            <li class="subcatalog-element">Квадрокоптеры</li>
+          </ul>
+        </div>
       </nav>
       <span class="product-number">01</span>
     </header>
@@ -672,10 +688,9 @@
                     ></label
                   >
                   <div class="delivery-number-wrap">
-                    <button
-                      type="button"
-                      class="btn-number-input btn-minus"
-                    ></button>
+                    <button type="button" class="btn-number-input btn-minus">
+                      <span class="visually-hidden">уменьшить количество</span>
+                    </button>
                     <input
                       class="number-input delivery-form-error"
                       type="number"
@@ -684,10 +699,9 @@
                       name="delivery-count"
                       min="1"
                     />
-                    <button
-                      type="button"
-                      class="btn-number-input btn-plus"
-                    ></button>
+                    <button type="button" class="btn-number-input btn-plus">
+                      <span class="visually-hidden">увеличить количество</span>
+                    </button>
                   </div>
                 </div>
               </div>

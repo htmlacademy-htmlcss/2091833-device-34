@@ -231,7 +231,7 @@ body {
   border: none;
   background-color: #ffe17f;
   font-size: 18px;
-  padding: 15px;
+  padding: 15px 15px 15px 0;
   padding-right: 60px;
   position: relative;
   cursor: pointer;
@@ -583,7 +583,7 @@ body {
 }
 
 .header-navigation {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .nav-wrap {
@@ -634,6 +634,47 @@ body {
   line-height: 30px;
   left: 898px;
   top: 224px;
+  z-index: 1;
+}
+
+.subcatalog-wrap {
+  display: none;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffe17f;
+}
+
+.subcatalog {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.subcatalog:last-child {
+  margin-right: 0;
+}
+
+.subcatalog-element {
+  margin-bottom: 20px;
+}
+
+/* ПОЧЕМУ КНОПКА НЕ СРАБАТЫВАЕТ */
+.button-catalog:active .subcatalog-wrap {
+  display: flex;
+}
+
+.button-catalog:focus-within .subcatalog-wrap {
+  display: flex;
+}
+
+.button-catalog:active .header-navigation {
+  margin-bottom: 0;
+}
+
+.button-catalog:focus-within .header-navigation {
+  margin-bottom: 0;
 }
 
 /* О товаре */
@@ -656,7 +697,7 @@ body {
   width: 560px;
   align-items: center;
   margin-top: -180px;
-  z-index: 999;
+  z-index: 60;
   position: relative;
 }
 
