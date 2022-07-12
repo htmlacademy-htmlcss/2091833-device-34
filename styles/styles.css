@@ -235,6 +235,7 @@ body {
   padding-right: 60px;
   position: relative;
   cursor: pointer;
+  z-index: 99999;
 }
 
 .button-catalog:focus {
@@ -660,16 +661,15 @@ body {
   margin-bottom: 20px;
 }
 
-/* ПОЧЕМУ КНОПКА НЕ СРАБАТЫВАЕТ */
-.button-catalog:active .subcatalog-wrap {
+.button-catalog:active nav > .subcatalog-wrap {
   display: flex;
 }
 
-.button-catalog:focus-within .subcatalog-wrap {
+.button-catalog:focus-within > .subcatalog-wrap {
   display: flex;
 }
 
-.button-catalog:active .header-navigation {
+.button-catalog:active + .header-navigation {
   margin-bottom: 0;
 }
 
