@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -103,6 +104,7 @@
                   src="/images/product/product_small1.png"
                   width="39"
                   height="43"
+                  alt=""
                 /><span class="cart-product-text"
                   >Любительская селфи-палка</span
                 >
@@ -113,6 +115,7 @@
                   src="/images/product/product_small2.png"
                   width="39"
                   height="43"
+                  alt=""
                 /><span class="cart-product-text"
                   >Профессиональная селфи-палка</span
                 >
@@ -126,38 +129,51 @@
           </li>
         </ul>
       </div>
-
       <nav class="header-navigation">
-        <div class="nav-wrap">
-          <button class="button-catalog" type="button">
-            <span class="button-catalog-title">Каталог товаров</span>
-          </button>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Доставка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Гарантия</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="subcatalog-wrap">
-          <ul class="subcatalog">
-            <li class="subcatalog-element">Виртуальная реальность</li>
-            <li class="subcatalog-element">Моноподы для cелфи</li>
-            <li class="subcatalog-element">Экшн-камеры</li>
-          </ul>
-          <ul class="subcatalog">
-            <li class="subcatalog-element">Фитнес-браслеты</li>
-            <li class="subcatalog-element">Умные часы</li>
-          </ul>
-          <ul class="subcatalog">
-            <li class="subcatalog-element">Квадрокоптеры</li>
-          </ul>
-        </div>
+        <ul class="nav-list">
+          <li class="button-catalog-li">
+            <button class="button-catalog" type="button">
+              <span class="button-catalog-title">Каталог товаров</span>
+            </button>
+          </li>
+          <li class="nav-subcatalog">
+            <ul class="sub-subcatalog">
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="catalog.html"
+                  >Моноподы для cелфи</a
+                >
+              </li>
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="sub-subcatalog">
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="">Фитнес-браслеты</a>
+              </li>
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="sub-subcatalog">
+              <li class="subcatalog-element">
+                <a class="subcatalog-link" href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
       </nav>
       <span class="product-number">01</span>
     </header>
@@ -167,13 +183,14 @@
         <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
         <div class="main-product-wrap">
           <section class="product-introduction">
+            <h2 class="visually-hidden">Фотография товара</h2>
             <button class="btn-control prev-img" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <a class="product-link-image" href="#">
               <img
                 class="product-image"
-                src="images\product-drone.png"
+                src="images/product-drone.png"
                 alt="Квадракоптер"
                 width="560"
                 height="560"
@@ -229,7 +246,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\vr.svg"
+                  src="images/category/vr.svg"
                   alt="Виртуальная реальность"
                   width="97"
                   height="55"
@@ -243,7 +260,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\monopod.svg"
+                  src="images/category/monopod.svg"
                   alt="Моноподы для селфи"
                   width="85"
                   height="117"
@@ -260,7 +277,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\action-camera.svg"
+                  src="images/category/action-camera.svg"
                   alt="Экшн-камеры"
                   width="71"
                   height="87"
@@ -274,7 +291,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\fitness-bracelets.svg"
+                  src="images/category/fitness-bracelets.svg"
                   alt="Фитнес-браслеты"
                   width="107"
                   height="64"
@@ -288,7 +305,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\smart-watch.svg"
+                  src="images/category/smart-watch.svg"
                   alt="Умные часы"
                   width="56"
                   height="98"
@@ -302,7 +319,7 @@
               <div class="img-wrap">
                 <img
                   class="category-image"
-                  src="images\category\drones.svg"
+                  src="images/category/drones.svg"
                   alt="Квадрокоптеры"
                   width="132"
                   height="69"
@@ -319,7 +336,7 @@
       <section class="service">
         <div class="main-wrap service-wrap">
           <h2 class="visually-hidden">Услуги</h2>
-          <div class="list-wrap">
+          <div class="service-list-wrap">
             <ul class="service-list">
               <li class="service-item">
                 <button class="button-active button-delivery" type="button">
@@ -341,14 +358,14 @@
           <div class="service-delivery-wrap">
             <h3 class="service-name">Доставка</h3>
             <p class="service-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-              ваш этаж.
+              Мы с удовольствием доставим ваш товар прямо<br />
+              к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
             </p>
           </div>
           <img
             class="service-img"
-            src="images\delivery-man.svg"
+            src="images/delivery-man.svg"
             alt="Человек спешит доставить товар"
             width="136"
             height="164"
@@ -359,15 +376,15 @@
 
       <section class="main-wrap delivery">
         <a class="delivery-link delivery-wrap" href="#">
-          <button class="delivery-img" tabindex="-1"></button>
+          <div class="delivery-img"></div>
           <h3 class="delivery-description">Доставим редкий товар под заказ</h3>
-          <img
+          <!-- <img
             class="delivery-icon"
             src="images/icons/information.svg"
             alt="Подробнее"
             width="40"
             height="40"
-          />
+          /> -->
         </a>
       </section>
       <!-- Доставка -->
@@ -435,7 +452,9 @@
                 type="email"
                 placeholder="Ваш e-mail"
               />
-              <button class="button-subscribe">Подписаться</button>
+              <button class="button-subscribe">
+                <span class="button-subscribe-title">Подписаться</span>
+              </button>
             </form>
 
             <div class="mailing-free-wrap">
@@ -482,8 +501,8 @@
             </li>
           </ul>
           <ul class="social-list">
-            <a class="social-link" href="https://t.me/htmlacademy">
-              <li class="social-item">
+            <li class="social-item">
+              <a class="social-link" href="https://t.me/htmlacademy">
                 <svg
                   class="social-img"
                   width="14"
@@ -497,13 +516,13 @@
                     fill="#444"
                   />
                 </svg>
-              </li>
-            </a>
-            <a
-              class="social-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
-              <li class="social-item">
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+              >
                 <svg
                   class="social-img"
                   width="16"
@@ -524,10 +543,10 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </li>
-            </a>
-            <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-              <li class="social-item">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
                 <svg
                   class="social-img"
                   width="15"
@@ -541,8 +560,8 @@
                     fill="#444"
                   />
                 </svg>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="footer-phone-wrap">
